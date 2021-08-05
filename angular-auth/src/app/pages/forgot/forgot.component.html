@@ -1,0 +1,7 @@
+<form class="form-signin" [formGroup]="form" (submit)="submit()">
+    <div *ngIf="cls" class="alert alert-{{cls}}" role="alert"> 
+        {{message}}
+    </div>
+    <h1>ResetPassword</h1>
+    <input formControlName="email" type="email" class="form-control mb-3" placeholder="Email" required>
+</form>
